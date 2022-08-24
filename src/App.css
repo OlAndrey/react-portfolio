@@ -1,3 +1,7 @@
+/*
+Intro
+*/
+
 .intro__wrapper{
   min-height: 100vh;
   display: flex;
@@ -22,6 +26,47 @@
   color: var(--color);
   background-color: var(--primary);
   border-color: var(--primary);
+}
+
+/*
+Title
+*/
+
+.title{
+  color: var(--yellow);
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+/*
+About
+*/
+
+.about {
+  padding: 5em 0;
+  height: 80vh;
+}
+.about__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.about__content--img{
+  width: 30%;
+  height: 30%;
+}
+
+.about__content--img img{
+  width: 100%;
+  box-shadow: -30px 30px 1px -15px var(--yellow);
+  margin-top: 10%;
+}
+.about__content--text {
+  width: 60%;
+  margin-top: -4.5em;
+  font-size: 1.35rem;
+  text-align: justify;
+  line-height: 1.2;
 }
 
 /*
