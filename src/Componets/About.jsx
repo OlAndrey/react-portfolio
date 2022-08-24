@@ -6,11 +6,21 @@ const About = () => {
         <section className="about" id="about">
             <div className="container">
                 <div className="about__wrapper">
-                    <div className="about__content--img" data-aos="fade-right">
+                    <div 
+                        className="about__content--img" 
+                        data-aos="fade-right"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
+                    >
                         <img src={image} alt="Head shot photo of Andrey." />
                     </div>
     
-                    <div className="about__content--text" data-aos="fade-left">
+                    <div 
+                        className="about__content--text" 
+                        data-aos="fade-left"
+                        data-aos-offset="500"
+                        data-aos-duration="1500"
+                    >
                         <h3 className="title">About Me</h3>
     
                         <p>

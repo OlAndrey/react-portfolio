@@ -3,7 +3,7 @@ import Typed from "react-typed";
 
 const Intro = () => {
     return (
-        <section className="intro">
+        <section className="intro" id="home">
             <div className="container">
                 <div className="intro__wrapper">
                     <h1 className="intro__title">Hello, I am Andrey Oleynik</h1>
