@@ -5,7 +5,7 @@ Navbar
   width: 100%;
   background: var(--background);
   position: fixed;
-  padding: 1.5em;
+  /* padding: 1.5em; */
   z-index: 1001;
 }
 .navbar__wrapper{
@@ -109,7 +109,6 @@ About
 
 .about {
   padding: 5em 0;
-  height: 80vh;
 }
 .about__wrapper{
   display: flex;
@@ -118,6 +117,7 @@ About
   align-content: center;
 }
 .about__content--img{
+  margin-top: 5em;
   width: 30%;
   height: 30%;
   padding: 1.25em;
@@ -131,10 +131,38 @@ About
 .about__content--text {
   width: 60%;
   padding: 0 1em;
-  margin-top: -3.5em;
   font-size: 1.35rem;
   text-align: justify;
   line-height: 1.2;
+}
+
+/*
+Skills
+*/
+.skills {
+  text-align: center;
+  height: 1px;
+  min-height: 80vh;
+  padding: 3em 0;
+}
+.skills__list ul {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills__list li {
+  flex: calc(100% / 6) 0 0;
+  display: block;
+}
+.skills__list li p{
+  text-align: center;
+  font-weight: bold;
+}
+
+i {
+  font-size: 4rem;
 }
 
 /*
