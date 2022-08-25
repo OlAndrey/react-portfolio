@@ -224,6 +224,149 @@ Portfolio
   color: var(--color);
 }
 
+/*
+Contact
+*/
+.contact__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+
+.form-style {
+  width: 100%;
+}
+
+.links{
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links li{
+  list-style-type: none;
+  padding: 0 20px 0 20px;
+}
+.links i {
+  font-size: 2rem;
+  color: var(--color);
+  transition: all 1s;
+}
+
+.links i:focus,
+.links i:hover {
+  font-size: 3rem;
+  color: var(--accent-2);
+}
+
+
+.contact {
+  padding: 3em 0;
+  width: 100%;    
+}
+.contact__content--img{
+  padding: 1em;
+}
+.contact img {
+  margin-bottom: -30px;
+  width: 50%;
+  box-shadow: -30px 30px 1px -15px var(--yellow);
+  margin: 10%;
+}
+
+p {
+  text-align: left;
+  font-size: 1rem;
+  color: var(--color);
+  margin-bottom: 50px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 2%;
+  color: #000;
+  font-family: inherit;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 7px solid transparent;
+  display: block;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 10px 20px rgba(var(--yellow), .2);
+  border-bottom: 8px solid var(--yellow);
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder {
+  color: var(--black);
+}
+
+textarea {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 15px 20px;
+  border-bottom: 8px solid transparent;
+  resize: none;
+}
+textarea::-webkit-input-placeholder {
+  color: #000;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 10px 20px rgba(var(--yellow), .2);
+  border-bottom: 8px solid var(--yellow);
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--yellow);
+    color: #fff;
+    margin-top: 50px;
+    text-align: center;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  color: var(--yellow);
+  background-color: darken(var(--yellow), 50%);
+  transition: all .3s;
+}
+
+.button-contact {
+  background: var(--yellow);
+}
+.button-contact:hover {
+  transform: none;
+  background: var(--success);
+}
+
+input::placeholder {
+  color: var(--black);
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*
 BUTTON
