@@ -4,6 +4,7 @@ import About from "./Componets/About";
 import Navbar from "./Componets/Navbar";
 import Intro from "./Componets/Intro";
 import Skills from "./Componets/Skills";
+import Portfolio from "./containers/Portfolio";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
         <Intro />
         <About />
         <Skills />
+        <Portfolio />
       </>
       
     );

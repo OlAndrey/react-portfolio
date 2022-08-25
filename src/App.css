@@ -166,6 +166,66 @@ i {
 }
 
 /*
+Portfolio
+*/
+
+.portfolio {
+  padding: 2em 0px;
+}
+.project__title{
+  width: 50%;
+  padding: 0 0 0 1em;
+  font-size: 1.45em;
+  text-align: left; 
+}
+.project  img {
+  width: 80%;
+  box-shadow: -25px 25px 1px -15px var(--yellow);
+}
+
+.project__content {
+  display: flex;
+  justify-content: center;
+}
+.project__content--img {
+  width: 50%;
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
+.project__content--text-right,
+.project__content--text-left {
+  width: 60%;
+  text-align: justify;
+}
+
+.project__content a{
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.project__content a.btn {
+  padding: 10px 30px 10px 30px;
+  background-color: var(--yellow);
+  margin-top: 20px;
+  color: var(--color);
+}
+
+.project__content .btn:hover,
+.project__content .btn:focus {
+  color: var(--yellow);
+  background-color: var(--color);
+  transition: all .75s;
+}
+.recent-work-info li{
+  font-size: .9rem;
+  display: inline-block;
+  padding: 5px;
+  color: var(--color);
+}
+
+
+/*
 BUTTON
 */
 
