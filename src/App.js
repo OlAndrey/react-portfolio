@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import About from "./Componets/About";
 import Navbar from "./Componets/Navbar";
 import Intro from "./Componets/Intro";
@@ -8,18 +8,45 @@ import Contact from "./Componets/Contact";
 import Footer from "./Componets/Footer";
 
 const App = () => {
-    return (
-      <>
+  const [theme, setTheme] = useState(null);
+  const body = document.querySelector('body');
+
+  useEffect(() => {
+    const dataTheme = localStorage.getItem('theme');
+    if(dataTheme){
+      setTheme(dataTheme)
+      if(dataTheme === "light")
+        body.classList.add("light")
+    }
+    else
+      setTheme("dark")
+  }, [])
+
+  const toggleLight = (theme) => {
+    localStorage.setItem('theme', theme);
+    body.classList.toggle("light")
+    setTheme(theme)
+  }
+
+  return (
+    <>
+    {
+      theme
+      ?<>
         <Navbar />
         <Intro />
         <About />
         <Skills />
         <Portfolio />
         <Contact />
-        <Footer />
+        <Footer toggleLight={toggleLight} theme={theme} />
       </>
-      
-    );
+      :<div>Loading...</div>
+    }
+    </>
+  );
 }
+
+
 
 export default App;

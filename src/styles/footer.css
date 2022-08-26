@@ -7,7 +7,7 @@ footer {
     position: relative;
 }
 
-footer a{
+.copyright a{
     font-size: 1.1rem;
     color: var(--color);
     text-decoration: underline; 
@@ -22,22 +22,35 @@ footer .blue{
 }
 
 footer .top {
-    bottom: 40px;
+    bottom: 5em;
+    right: 50px;
+    position: fixed;
+}
+.toggle-light {
+    bottom: 2em;
     right: 50px;
     position: fixed;
 }
 footer .up{
-    width: 60px;
-    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
     position: absolute;
     bottom: 10px;
-    padding: 20px;
+    border-radius: 50%;
     transform: translate(-50%);
-    text-align: center;
     color: var(--color);
+    background: var(--yellow);
+    transition: 1s ease all;
+    cursor: pointer;
 }
-.up:hover,
-.up:focus {
+footer .up{
+    border: none;
+}
+.up:hover {
     color: var(--accent-2);
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
