@@ -5,6 +5,7 @@ import Intro from "./Componets/Intro";
 import Skills from "./Componets/Skills";
 import Portfolio from "./containers/Portfolio";
 import Contact from "./Componets/Contact";
+import Footer from "./Componets/Footer";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
         <Skills />
         <Portfolio />
         <Contact />
+        <Footer />
       </>
       
     );

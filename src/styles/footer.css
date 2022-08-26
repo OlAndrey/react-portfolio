@@ -1,0 +1,43 @@
+footer {
+    background-color: var(--yellow);
+    padding-top: 5px;
+    color: var(--color);
+    text-align: center;
+    padding-bottom: 1px;
+    position: relative;
+}
+
+footer a{
+    font-size: 1.1rem;
+    color: var(--color);
+    text-decoration: underline; 
+}
+footer .yellow{
+    color: yellow;
+}
+footer .blue{
+    color: blue;
+    position: relative;
+    left: -0.5em
+}
+
+footer .top {
+    bottom: 40px;
+    right: 50px;
+    position: fixed;
+}
+footer .up{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    transform: translate(-50%);
+    text-align: center;
+    color: var(--color);
+}
+.up:hover,
+.up:focus {
+    color: var(--accent-2);
+    font-size: 1.5em;
+}
