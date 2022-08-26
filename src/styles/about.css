@@ -1,0 +1,32 @@
+/*
+About
+*/
+
+.about {
+    padding: 5em 0;
+  }
+  .about__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .about__content--img{
+    margin-top: 5em;
+    width: 30%;
+    height: 30%;
+    padding: 1.25em;
+  }
+  
+  .about__content--img img{
+    width: 100%;
+    box-shadow: -30px 30px 1px -15px var(--yellow);
+    margin-top: 10%;
+  }
+  .about__content--text {
+    width: 60%;
+    padding: 0 1em;
+    font-size: 1.35rem;
+    text-align: justify;
+    line-height: 1.2;
+  }

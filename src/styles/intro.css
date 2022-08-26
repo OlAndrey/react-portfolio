@@ -1,0 +1,30 @@
+/*
+Intro
+*/
+
+.intro__wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro__title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+  
+  .intro__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .intro__button{
+    color: var(--color);
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  

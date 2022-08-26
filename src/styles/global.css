@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body.light {
+  --color: black;
+  --accent-1: white;
+  --accent-2: #a1a1a1;
+  --background: #f5f5f5;
+  --border: #c7c7c7;
+  --primary: #7045ff;
+  --success: #5dcb8e;
+  --error: #e8235e;
+  --yellow: #f5a623;
+  --dark: #1b1c23;
+  --primary-color: #1b1c23;
+}
+
+body {
+  --color: white;
+  --accent-1: #21242d;
+  --accent-2: #a1a1a1;
+  --background: #1b1c23;
+  --border: #262a30;
+  --primary: #7045ff;
+  --success: #5dcb8e;
+  --error: #e8235e;
+  --yellow: #f5a623;
+  --dark: #1b1c23;
+  --primary-color: white;
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--color);
+  font: calc(14px + (10 * 0.75) *((100vw - 320px) / 1280)) "Open Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: clip;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+/*
+Title
+*/
+
+.title{
+    color: var(--yellow);
+    text-align: center;
+    font-size: 2.25rem;
+  }
+  
+  /*
+  BUTTON
+  */
+  
+  .button {
+    display: inline-block;
+    padding: .3rem .6rem;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+    border-radius: .3rem;
+    border: 1px solid transparent;
+    transition: all 500ms ease;
+    cursor: pointer;
+  }
+  
+  .button:focus {
+    outline: 0;
+  }
+  
+  .button:hover {
+    background-color: var(--primary);
+    color: var(--color);
+    transform: scale(1.1);
+    transition: all 500ms ease;
+  }
+  

@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import About from "./Componets/About";
 import Navbar from "./Componets/Navbar";
 import Intro from "./Componets/Intro";
