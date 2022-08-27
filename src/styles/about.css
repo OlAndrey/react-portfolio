@@ -7,6 +7,7 @@ About
   }
   .about__wrapper{
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
@@ -24,9 +25,38 @@ About
     margin-top: 10%;
   }
   .about__content--text {
-    width: 60%;
     padding: 0 1em;
     font-size: 1.35rem;
     text-align: justify;
     line-height: 1.2;
   }
+
+    
+@media (max-width: 576px) {
+  .about__wrapper{
+    flex-direction: column;
+  }
+  .about__content--img {
+    margin: 0;
+    width: 100%;
+  }
+  .about__content--text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__content--text {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about__content--text {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}

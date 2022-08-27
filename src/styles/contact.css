@@ -50,7 +50,7 @@ Contact
     margin: 10%;
   }
   
-  p {
+  .contact p {
     text-align: left;
     font-size: 1rem;
     color: var(--color);
@@ -143,3 +143,33 @@ Contact
     overflow: hidden;
   }
   
+      
+@media (max-width: 576px) {
+  .contact__wrapper {
+    display: block;
+  }
+  .contact img {
+    width: 85%;
+  }
+  .form-style{
+    padding: 1.25em;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact__content--img {
+    flex: 45% 0 0;
+  }
+  .contact img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__content--img {
+    flex: 90% 0 0;
+  }
+  .contact img {
+    width: 60%;
+  }
+}

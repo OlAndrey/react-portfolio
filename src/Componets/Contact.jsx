@@ -13,7 +13,7 @@ const Contact = () => {
                     data-aos-duration="1500"
                 >
                     <div className="contact__content--img">
-                        <img src={image} alt="Head shot photo of Pritika." />
+                        <img src={image} alt="Head shot photo of Andrey." />
                     </div>
                     <div className="form-style">
                         <ul className="links">

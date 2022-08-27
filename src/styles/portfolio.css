@@ -3,7 +3,7 @@ Portfolio
 */
 
 .portfolio {
-    padding: 2em 0px;
+    padding: 5em 0px;
   }
   .project__title{
     width: 50%;
@@ -21,14 +21,14 @@ Portfolio
     justify-content: center;
   }
   .project__content--img {
-    width: 50%;
+    flex: 50% 0 0;
     margin: 1em 0;
     padding: 0 1em;
   }
   
   .project__content--text-right,
   .project__content--text-left {
-    width: 60%;
+    flex: 60%;
     text-align: justify;
   }
   
@@ -43,6 +43,10 @@ Portfolio
     margin-top: 20px;
     color: var(--color);
   }
+    
+  .project__content a.btn:nth-child(even) {
+    border-left: 2px solid var(--dark);
+  }
   
   .project__content .btn:hover,
   .project__content .btn:focus {
@@ -55,6 +59,33 @@ Portfolio
     display: inline-block;
     padding: 5px;
     color: var(--color);
+    background: var(--accent-2);
+    margin: .5em;
   }
   
+      
+@media (max-width: 576px) {
+  .recent-work-info ul{
+    padding: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .project__content {
+    display: block;
+  }
+  .project__content--img{
+    width: 100%;
+  }
+  .project img {
+    width: 100%;
+  }
+  .project__content--text-right{
+    width: 100%;
+    padding: 1.25em;
+  }
+}
+
+@media (min-width: 992px) {
   
+}

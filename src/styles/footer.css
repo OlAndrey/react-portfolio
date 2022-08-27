@@ -22,12 +22,12 @@ footer .blue{
 }
 
 footer .top {
-    bottom: 5em;
+    bottom: 100px;
     right: 50px;
     position: fixed;
 }
 .toggle-light {
-    bottom: 2em;
+    bottom: 40px;
     right: 50px;
     position: fixed;
 }
@@ -36,8 +36,8 @@ footer .up{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 2em;
-    height: 2em;
+    width: 45px;
+    height: 45px;
     position: absolute;
     bottom: 10px;
     border-radius: 50%;

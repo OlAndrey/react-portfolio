@@ -24,7 +24,7 @@ const Intro = () => {
                     <p>
                         <a
                         className="button intro__button"
-                        href="#work"
+                        href="#portfolio"
                         role="button"
                         >
                         View My Work

@@ -5,7 +5,7 @@ Skills
     text-align: center;
     height: 1px;
     min-height: 80vh;
-    padding: 3em 0;
+    padding: 5em 0;
   }
   .skills__list ul {
     text-align: center;
@@ -15,7 +15,6 @@ Skills
     justify-content: center;
   }
   .skills__list li {
-    flex: calc(100% / 6) 0 0;
     display: block;
   }
   .skills__list li p{
@@ -27,3 +26,21 @@ Skills
     font-size: 4rem;
   }
   
+      
+@media (max-width: 576px) {
+  .skills__list li{
+    flex: calc(100% / 3) 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills__list li{
+    flex: calc(100% / 5) 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills__list li{
+    flex: calc(100% / 6) 0;
+  }
+}

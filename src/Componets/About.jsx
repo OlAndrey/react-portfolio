@@ -6,14 +6,6 @@ const About = () => {
         <section className="about" id="about">
             <div className="container">
                 <div className="about__wrapper">
-                    <div 
-                        className="about__content--img" 
-                        data-aos="fade-right"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
-                    >
-                        <img src={image} alt="Head shot photo of Andrey." />
-                    </div>
     
                     <div 
                         className="about__content--text" 
@@ -41,6 +33,14 @@ const About = () => {
                             veniam vero inventore quidem iure fuga incidunt veritatis, qui 
                             necessitatibus esse aut reprehenderit.
                         </p>
+                    </div>
+                    <div 
+                        className="about__content--img" 
+                        data-aos="fade-right"
+                        data-aos-offset="500"
+                        data-aos-duration="500"
+                    >
+                        <img src={image} alt="Head shot photo of Andrey." />
                     </div>
                 </div>
                 
