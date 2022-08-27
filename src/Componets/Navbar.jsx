@@ -1,8 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png"
 
 const Navbar = () =>{
-    const [showMenu, setShowMenu] = useState(false)
+    const [showMenu, setShowMenu] = useState(false);
+    const links = ["home", "about", "skills", "portfolio", "contact"];
+    let coordinate = [ 0, 0, 0, 0, 0 ]
+
+    const toggleActiveLink = (index) => {
+        const navLinks = document.querySelectorAll('.nav__link');
+        const linkActive = document.querySelector('.nav__link.active')
+        if(navLinks[index] !== linkActive){
+            linkActive.classList.remove('active')
+            navLinks[index].classList.add('active')
+        }
+    }
+
+    const scrollHandler = () => {
+        for (let i = 0; i < links.length; i++) {
+            const element = document.querySelector('#' + links[i]);
+            const scrollTop = document.body.scrollTop + element.getBoundingClientRect().top;
+            const scrollBottom = element.getBoundingClientRect().bottom;
+            if( i === links.length - 1 && scrollBottom < 1110){
+                toggleActiveLink(i)
+                return 
+            }
+            coordinate[i] = scrollTop;
+        }
+        let indexOfMax = 0;
+        for (let j = 1; j < coordinate.length; j++){ 
+            if ((coordinate[j] < 50) && coordinate[j] > coordinate[indexOfMax]){
+                indexOfMax = j;
+            }
+        }
+        toggleActiveLink(indexOfMax)
+        // console.log(indexOfMax)
+        // console.log(coordinate)
+    };
+    
+    useEffect(() => {      
+        document.addEventListener('scroll', scrollHandler);
+        return () => document.removeEventListener('scroll', scrollHandler);
+    }, []);
 
     return (
       <nav className="navbar" id="mainNav">
