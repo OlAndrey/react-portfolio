@@ -3,6 +3,7 @@ import logo from "../assets/logo.png"
 
 const Navbar = () =>{
     const [showMenu, setShowMenu] = useState(false);
+    const [changeBG, setChengeBG] = useState(false);
     const links = ["home", "about", "skills", "portfolio", "contact"];
     let coordinate = [ 0, 0, 0, 0, 0 ]
 
@@ -24,6 +25,16 @@ const Navbar = () =>{
                 toggleActiveLink(i)
                 return 
             }
+            if( i === 0){
+                if(scrollTop !== 0){
+                    setChengeBG(true);
+                    document.querySelector('.top').classList.remove("d-none")
+                }
+                else{
+                    setChengeBG(false)
+                    document.querySelector('.top').className = "top d-none"
+                }
+            }
             coordinate[i] = scrollTop;
         }
         let indexOfMax = 0;
@@ -33,8 +44,6 @@ const Navbar = () =>{
             }
         }
         toggleActiveLink(indexOfMax)
-        // console.log(indexOfMax)
-        // console.log(coordinate)
     };
     
     useEffect(() => {      
@@ -42,8 +51,13 @@ const Navbar = () =>{
         return () => document.removeEventListener('scroll', scrollHandler);
     }, []);
 
+    const setBG2 = () => {
+        setChengeBG(true) 
+        setShowMenu(!showMenu)
+    }
+
     return (
-      <nav className="navbar" id="mainNav">
+      <nav className={"navbar" + (changeBG ?" bg-var2": "")} id="mainNav">
         <div className="container">
         <div className="navbar__wrapper">
             <a className="navbar__brand" href="#home">
@@ -57,7 +71,7 @@ const Navbar = () =>{
                 <button 
                     className={"navbar__button-toggler " + (!showMenu ? "collapsed" : "" )} 
                     type="button" 
-                    onClick={() => setShowMenu(!showMenu)}
+                    onClick={setBG2}
                 >
                     <span></span>
                     <span></span>

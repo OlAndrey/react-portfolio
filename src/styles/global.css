@@ -74,6 +74,10 @@ body {
   margin: auto;
 }
 
+.d-none{
+  display: none;
+}
+
 /*
 Title
 */

@@ -10,7 +10,13 @@ footer {
 .copyright a{
     font-size: 1.1rem;
     color: var(--color);
-    text-decoration: underline; 
+    text-decoration: underline;
+    transition: .75s all ease; 
+}
+
+.copyright a:hover{
+    font-weight: 600;
+    text-decoration: none; 
 }
 footer .yellow{
     color: yellow;

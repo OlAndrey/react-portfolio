@@ -3,7 +3,7 @@ import React from "react";
 const Footer = ({theme, toggleLight}) => {
     return (
         <footer className="footer">
-            <div className="top">
+            <div className="top d-none">
                 <a className="up" href="#home">
                 <i className="fas fa-angle-double-up" />
                 <span className="visuallyHidden">Go up</span>

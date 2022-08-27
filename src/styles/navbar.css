@@ -7,6 +7,14 @@ Navbar
     position: fixed;
     /* padding: 1.5em; */
     z-index: 1001;
+  }
+  .navbar.bg-var2{
+    background: var(--background-2);
+  }
+  .navbar.bg-var2 .navbar__brand{
+    background: var(--background-2);
+  }
+  .navbar.bg-var2 .navbar__menu{
     background: var(--background-2);
   }
   .navbar__wrapper{
@@ -19,7 +27,6 @@ Navbar
   }
   .navbar__brand{
     display: block;
-    background: var(--background-2);
     padding: 1em;
     z-index: 500;
   }
@@ -89,7 +96,6 @@ Navbar
     left: 50%;
     top: 15em;
     z-index: 100;
-    background: var(--background-2);
     padding: 0 1em;
     transform: translate(-50%, -350%);
     transition: transform 1s 1s, height 1s;
