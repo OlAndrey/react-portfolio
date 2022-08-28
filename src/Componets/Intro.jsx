@@ -4,6 +4,9 @@ import Typed from "react-typed";
 const Intro = () => {
     return (
         <section className="intro" id="home">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
             <div className="container">
                 <div className="intro__wrapper">
                     <h1 className="intro__title">Hello, I am Andrey Oleynik</h1>

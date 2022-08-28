@@ -64,7 +64,7 @@ const Navbar = () =>{
                 <img
                     src={logo}
                     alt="logo"
-                    style={{ maxWidth: "100px" }}
+                    style={{ maxWidth: "4.5em" }}
                 />
             </a>
             <div className="navbar__button">

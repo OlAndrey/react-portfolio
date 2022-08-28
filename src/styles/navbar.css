@@ -3,7 +3,7 @@ Navbar
 */
 .navbar{
     width: 100%;
-    background: var(--background);
+    /* background: var(--background); */
     position: fixed;
     /* padding: 1.5em; */
     z-index: 1001;
@@ -30,8 +30,16 @@ Navbar
     padding: 1em;
     z-index: 500;
   }
+  
   .navbar__button{
+    flex-grow: 1;
+    height: 6.5em;
     padding: 1em;
+    text-align: right;
+    z-index: 499;
+  }
+  .navbar.bg-var2 .navbar__button{
+    background: var(--background-2);
   }
 
   .navbar__button-toggler {
@@ -39,6 +47,7 @@ Navbar
     border: none;
     background: none;
     cursor: pointer;
+    margin-top: 1em;
     z-index: 501;
   }
   
@@ -94,7 +103,7 @@ Navbar
   .navbar__menu{
     flex-grow: 1;
     left: 50%;
-    top: 15em;
+    top: 12.5em;
     z-index: 100;
     padding: 0 1em;
     transform: translate(-50%, -350%);
