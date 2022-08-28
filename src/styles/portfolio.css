@@ -12,7 +12,7 @@ Portfolio
     text-align: left; 
   }
   .project  img {
-    width: 80%;
+    width: 100%;
     box-shadow: -25px 25px 1px -15px var(--yellow);
   }
   
@@ -62,7 +62,6 @@ Portfolio
     background: var(--accent-2);
     margin: .5em;
   }
-  
       
 @media (max-width: 576px) {
   .recent-work-info ul{
