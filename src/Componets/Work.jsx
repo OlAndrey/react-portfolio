@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import ImageViewer from "./ImageViewer";
 
-const Work = ({ title, description, technology, imageUrl, sourceUrl, liveViewUrl }) => {
+const Work = ({ title, description, technology, images, sourceUrl, liveViewUrl }) => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <div className="project">
             <h4 className="project__title">{title}</h4>
@@ -11,8 +13,9 @@ const Work = ({ title, description, technology, imageUrl, sourceUrl, liveViewUrl
                     data-aos-duration="1500"
                 >
                     <img
-                        src={imageUrl}
+                        src={images[0].url}
                         alt="A photo of Concert Account App Project."
+                        onClick={() => setIsOpen(true)}
                     />
                 </div>
                 <div 
@@ -45,6 +48,7 @@ const Work = ({ title, description, technology, imageUrl, sourceUrl, liveViewUrl
                     </div>
                 </div>
             </div>
+            <ImageViewer isOpen={isOpen} setIsOpen={setIsOpen} images={images} />
         </div>
     )
 }

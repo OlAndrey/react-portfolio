@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import image from "../assets/me.jpeg"
+import ImageViewer from "./ImageViewer";
 
 const About = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const images = [
+        { title: "It is me", caption: "Andrey Oleynik photo", url: image },
+    ]
+
     return (
         <section className="about" id="about">
             <div className="container">
@@ -40,11 +46,17 @@ const About = () => {
                         data-aos-offset="500"
                         data-aos-duration="500"
                     >
-                        <img src={image} alt="Head shot photo of Andrey." />
+                        
+                        <img 
+                            src={image} 
+                            alt="Head shot photo of Andrey."
+                            onClick={() => setIsOpen(true)} 
+                        />
                     </div>
                 </div>
                 
             </div>
+            <ImageViewer isOpen={isOpen} setIsOpen={setIsOpen} images={images} />
         </section>
     );
 }

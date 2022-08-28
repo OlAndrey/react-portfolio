@@ -6,7 +6,7 @@ Navbar
     /* background: var(--background); */
     position: fixed;
     /* padding: 1.5em; */
-    z-index: 1001;
+    z-index: 801;
   }
   .navbar.bg-var2{
     background: var(--background-2);

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactForm from "./ContactForm";
 import image from "../assets/me.jpeg"
+import ImageViewer from "./ImageViewer";
 
 const Contact = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const images = [
+        { title: "It is me", caption: "Andrey Oleynik photo", url: image },
+    ]
+
     return (
         <section className="contact" id="contact">
             <div className="container">
@@ -13,7 +19,11 @@ const Contact = () => {
                     data-aos-duration="1500"
                 >
                     <div className="contact__content--img">
-                        <img src={image} alt="Head shot photo of Andrey." />
+                        <img 
+                            src={image} 
+                            alt="Head shot photo of Andrey."
+                            onClick={() => setIsOpen(true)} 
+                        />
                     </div>
                     <div className="form-style">
                         <ul className="links">
@@ -49,6 +59,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            <ImageViewer isOpen={isOpen} setIsOpen={setIsOpen} images={images} />
         </section>
     )
 }
