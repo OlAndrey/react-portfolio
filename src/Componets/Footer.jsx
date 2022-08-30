@@ -29,7 +29,7 @@ const Footer = ({theme, toggleLight}) => {
                         <i className="fas fa-heart yellow" />
                         <i className="fas fa-heart blue" />
                         by&nbsp;
-                        <a href="#" target="blank">
+                        <a href="https://github.com/OlAndrey" target="blank">
                             Oleynik Andrey
                         </a>
                     </div>

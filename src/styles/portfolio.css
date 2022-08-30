@@ -39,21 +39,13 @@ Portfolio
   
   .project__content a.btn {
     padding: 10px 30px 10px 30px;
-    background-color: var(--yellow);
     margin-top: 20px;
-    color: var(--color);
   }
     
-  .project__content a.btn:nth-child(even) {
+  .project__content a.button:nth-child(even) {
     border-left: 2px solid var(--dark);
   }
   
-  .project__content .btn:hover,
-  .project__content .btn:focus {
-    color: var(--yellow);
-    background-color: var(--color);
-    transition: all .75s;
-  }
   .recent-work-info li{
     font-size: .9rem;
     display: inline-block;

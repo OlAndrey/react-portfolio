@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo.png"
+import logo from "../images/logo.png"
 
 const Navbar = () =>{
     const [showMenu, setShowMenu] = useState(false);
@@ -49,6 +49,7 @@ const Navbar = () =>{
     useEffect(() => {      
         document.addEventListener('scroll', scrollHandler);
         return () => document.removeEventListener('scroll', scrollHandler);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const setBG2 = () => {

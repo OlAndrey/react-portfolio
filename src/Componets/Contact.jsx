@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ContactForm from "./ContactForm";
-import image from "../assets/me.jpeg"
+import image from "../images/me-contact.jpeg"
 import ImageViewer from "./ImageViewer";
 
 const Contact = () => {
@@ -29,7 +29,7 @@ const Contact = () => {
                         <ul className="links">
                             <li>
                                 <a 
-                                    href="#" 
+                                    href="https://github.com/OlAndrey" 
                                     target="blank"
                                 >
                                     <i className="devicon-github-original" />
@@ -38,7 +38,7 @@ const Contact = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="https://www.linkedin.com/in/andrey-oleynik-801720214/"
                                     target="blank"
                                 >
                                     <i className="devicon-linkedin-plain" />
@@ -47,7 +47,7 @@ const Contact = () => {
                             </li>
                             <li>
                                 <a 
-                                    href="#" 
+                                    href="mailto:oleynik.andrey01@gmail.com" 
                                     target="blank"
                                 >
                                     <i className="devicon-maya-plain" />

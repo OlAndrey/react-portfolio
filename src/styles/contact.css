@@ -117,14 +117,6 @@ Contact
     transition: all .3s;
   }
   
-  .button-contact {
-    background: var(--yellow);
-  }
-  .button-contact:hover {
-    transform: none;
-    background: var(--success);
-  }
-  
   input::placeholder {
     color: var(--black);
   }

@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ImageViewer from "./ImageViewer";
 
 const Work = ({ title, description, technology, images, sourceUrl, liveViewUrl }) => {
     const [isOpen, setIsOpen] = useState(false);
    
-    useEffect(() => {
-        // const myTimeout = 
-        // return clearTimeout(myTimeout);
-    }, [])
     return (
         <div className="project">
             <h4 className="project__title">{title}</h4>
@@ -59,12 +55,12 @@ const Work = ({ title, description, technology, images, sourceUrl, liveViewUrl }
                             <a
                                 href={sourceUrl}
                                 target="blank"
-                                className="btn"
+                                className="button"
                                 >GitHub</a>
                             <a
                                 href={liveViewUrl}
                                 target="blank"
-                                className="btn"
+                                className="button"
                                 >Live Site</a>
                         </div>
                     </div>

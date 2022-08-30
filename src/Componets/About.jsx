@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image from "../assets/me.jpeg"
+import image from "../images/me.jpeg"
 import ImageViewer from "./ImageViewer";
 
 const About = () => {
@@ -22,22 +22,13 @@ const About = () => {
                         <h3 className="title">About Me</h3>
     
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            Molestiae odio consequuntur enim nobis, ut illum explicabo 
-                            velit earum, ipsa cumque impedit accusamus quia quas officiis 
-                            obcaecati recusandae quae. Dolorum, velit.
+                            Hi there! My name is Andrey! I'm a Front-End Web Developer who has a knack for turning nothing into something.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Laudantium, perferendis odit qui facilis dolor obcaecati
-                            illum atque voluptatibus dicta ut quasi, eos ea quaerat 
-                            officiis quos optio temporibus sint quae.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Vel explicabo illo atque, ea dolorum, molestias facere ratione 
-                            veniam vero inventore quidem iure fuga incidunt veritatis, qui 
-                            necessitatibus esse aut reprehenderit.
+                            My passion is building and exploring state-of-the-art, appealing websites. I 
+                            have been studying web development since May 2021. Specializing in React, Redux. 
+                            Build appealing websites through CSS frameworks such as Bootstrap4, and 
+                            pre-processor SCSS. I also know BEM-naming, responsive layout and cross-browser. 
                         </p>
                     </div>
                     <div 

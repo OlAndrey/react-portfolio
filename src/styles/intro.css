@@ -2,7 +2,7 @@
 Intro
 */
 body.light .intro{
-  background: url("../assets/background.png");
+  background: url("../images/background.png");
   background-size: cover;
   background-position: 20% center;
 }
@@ -34,8 +34,6 @@ body:not(.light) .intro {
   }
   
   .intro__button{
-    color: var(--color);
-    background-color: var(--primary);
-    border-color: var(--primary);
+    border-radius: .3rem;
   }
   

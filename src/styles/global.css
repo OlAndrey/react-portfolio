@@ -10,6 +10,9 @@ textarea,
 select {
   font: inherit;
 }
+p{
+  white-space: pre-line;
+}
 
 body.light {
   --color: black;
@@ -96,15 +99,16 @@ Title
     display: inline-block;
     padding: .3rem .6rem;
     text-align: center;
-    vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background-color: var(--yellow);
+    margin-top: 20px;
+    color: var(--color);
+    border: none;
     font-size: 1rem;
-    border-radius: .3rem;
-    border: 1px solid transparent;
-    transition: all 500ms ease;
+    transition: all .75s ease;
     cursor: pointer;
   }
   
@@ -113,10 +117,9 @@ Title
   }
   
   .button:hover {
-    background-color: var(--primary);
-    color: var(--color);
-    transform: scale(1.1);
-    transition: all 500ms ease;
+    color: var(--yellow);
+    background-color: var(--color);
+    transition: all .75s ease;
   }
 
   
