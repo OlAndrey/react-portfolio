@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
     const [state, handleSubmit] = useForm("mgeqvzke");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return <p>Thank you for your message!</p>;
     }
     return (
         <form onSubmit={handleSubmit}>
@@ -24,7 +24,7 @@ function ContactForm() {
             <label htmlFor="email" className="visuallyHidden">Email address</label>
             <input
                 type="email"
-                name="_replyto"
+                name="email"
                 id="email"
                 placeholder="Email address"
                 required

@@ -10,8 +10,14 @@ textarea,
 select {
   font: inherit;
 }
+
 p{
   white-space: pre-line;
+  margin: 0 0 1em 0;
+}
+
+img{
+  cursor: pointer;
 }
 
 body.light {
