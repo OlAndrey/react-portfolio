@@ -8,6 +8,7 @@ const ImageViewer = ({isOpen, setIsOpen, images}) => {
   useEffect(() => { 
     setTimeout(() => setImgIndex(imgIndex + 1))
     setTimeout(() => setImgIndex(0), 50)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
 
   return (

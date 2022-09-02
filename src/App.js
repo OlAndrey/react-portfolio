@@ -20,6 +20,7 @@ const App = () => {
     }
     else
       setTheme("dark")
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const toggleLight = (theme) => {
