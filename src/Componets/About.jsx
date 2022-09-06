@@ -16,7 +16,6 @@ const About = () => {
                     <div 
                         className="about__content--text" 
                         data-aos="fade-left"
-                        data-aos-offset="500"
                         data-aos-duration="1500"
                     >
                         <h3 className="title">About Me</h3>
@@ -34,8 +33,7 @@ const About = () => {
                     <div 
                         className="about__content--img" 
                         data-aos="fade-right"
-                        data-aos-offset="500"
-                        data-aos-duration="500"
+                        data-aos-duration="1500"
                     >
                         
                         <img 

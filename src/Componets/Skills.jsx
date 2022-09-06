@@ -7,7 +7,6 @@ const Skills = () => {
                 <div className="skills__wrapper">
                     <h3 className="title">Technical Skills</h3>
                     <div className="skills__list" data-aos="fade-up"
-                        data-aos-offset="500"
                         data-aos-duration="1500">
                         <ul>
                             <li>
