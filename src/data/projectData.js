@@ -95,6 +95,37 @@ const data = [
   },
   {
     id: 3,
+    title: 'The-News-App',
+    description:
+      'The News App project allows users to view the list of news in real time. Search and filter different types of news to read.',
+    images: [
+      {
+        title: 'The-News-App',
+        caption: 'The-News-App Home Page',
+        url: 'https://res.cloudinary.com/dtpqmlah5/image/upload/v1683832898/news1_zixrvs.png'
+      },
+      {
+        title: 'The-News-App',
+        caption: 'The-News-App view category in Home Page',
+        url: 'https://res.cloudinary.com/dtpqmlah5/image/upload/v1683832901/news2_owj6pq.png'
+      },
+      {
+        title: 'The-News-App',
+        caption: 'The-News-App Article Page',
+        url: 'https://res.cloudinary.com/dtpqmlah5/image/upload/v1683832899/news3_xz3p7e.png'
+      },
+      {
+        title: 'The-News-App',
+        caption: 'The-News-App Category Page',
+        url: 'https://res.cloudinary.com/dtpqmlah5/image/upload/v1683832898/news4_u8evbj.png'
+      }
+    ],
+    sourceUrl: 'https://github.com/OlAndrey/the-news-app',
+    liveViewUrl: 'https://the-news-app.vercel.app/',
+    technology: ['Next', 'React', 'Tailwind', 'PWA', 'MediaStackAPI']
+  },
+  {
+    id: 4,
     title: 'Blogging-app',
     description:
       'A small post application built on MERN. With authorization and the ability to create, modify and delete posts, and attach images to them. Also their comments. Counting the number of post views and displaying them.',
@@ -130,7 +161,7 @@ const data = [
     technology: ['MongoDB', 'Express', 'React', 'Node', 'Redux', 'MUI', 'JWT']
   },
   {
-    id: 4,
+    id: 5,
     title: 'Weather',
     description:
       'Website for monitoring weather in cities using the OpenWeatherMap API.',
